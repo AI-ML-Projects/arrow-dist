@@ -152,7 +152,7 @@ function build_wheel {
     popd
     popd
 
-    git clone https://github.com/apache/parquet-cpp.git
+    git clone --depth=1 https://github.com/apache/parquet-cpp.git
     pushd parquet-cpp
     mkdir build
     pushd build
